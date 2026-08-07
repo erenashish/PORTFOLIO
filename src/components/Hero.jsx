@@ -75,7 +75,7 @@ const Hero = () => {
         yoyo: true,
         ease: 'sine.inOut'
       });
-      
+
       gsap.to('.shape-2', {
         y: 40,
         x: 30,
@@ -85,13 +85,13 @@ const Hero = () => {
         ease: 'sine.inOut'
       });
     }, container);
-    
+
     return () => ctx.revert();
   }, []);
 
   return (
     <section ref={container} className="relative min-h-screen w-full overflow-hidden flex flex-col md:flex-row bg-[#fafafa]">
-      
+
       {/* Horizontal Menu Bar */}
       <nav className="absolute top-6 left-0 w-full z-50 flex justify-between items-center px-6 md:px-12 pointer-events-none">
         {/* Logo */}
@@ -131,9 +131,9 @@ const Hero = () => {
         </div>
 
         <div className="relative z-20 flex flex-col items-start mt-10 md:mt-0">
-          
+
           {/* HUGE TEXT for GSAP reveal */}
-          <h1 
+          <h1
             className="text-[4rem] sm:text-[6rem] md:text-[7.5rem] lg:text-[9.5rem] xl:text-[11.5rem] leading-[0.82] font-black text-white tracking-tighter uppercase mb-6 md:mb-10 w-[120%] md:w-[150%] max-w-[150vw]"
             style={{ fontFamily: "'Inter', sans-serif" }}
           >
@@ -179,7 +179,7 @@ const Hero = () => {
 
       {/* RIGHT SECTION (White) */}
       <div className="w-full md:w-[45%] min-h-[40vh] md:min-h-screen relative flex flex-col justify-between p-6 md:p-12 lg:p-20 pt-10 md:pt-32 z-0">
-        
+
         {/* Availability */}
         <div className="right-element flex flex-col items-end text-right ml-auto z-20">
           <div className="flex items-center gap-2 mb-2">
